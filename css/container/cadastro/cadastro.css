@@ -1,0 +1,73 @@
+#titulo-cadastro {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cadastro {
+  margin-left: 8%;
+  margin-right: 40%;
+}
+
+#cadastro h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #120633;
+}
+
+#cadastro .form-cadastro {
+  width: 100%;
+}
+
+#cadastro .form-cadastro input {
+  border: 0 none;
+  outline: 0;
+  border: 1px solid gray;
+  padding: 5px 5px 5px 5px;
+  width: 50%;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+#cadastro .form-cadastro .label-input {
+  margin: 10px;
+}
+
+#cadastro .form-cadastro select {
+  border-radius: 25px;
+  padding: 5px 5px 5px 5px;
+  margin: 8px;
+  outline: 0;
+  width: 50%;
+}
+
+#cadastro .form-cadastro #departamento {
+  border-radius: 25px;
+  padding: 5px 5px 5px 5px;
+  margin: 8px;
+  outline: 0;
+}
+
+#cadastro fieldset legend {
+  color: #451db4;
+  margin-left: 45px;
+  font-size: 20px;
+}
+
+#cadastro .form-cadastro .form-acoes button {
+  background-color: #0c569ba2;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 10px 15px 8px 15px;
+}
+
+#cadastro .form-cadastro .form-acoes button:hover {
+  background-color: #05325cec;
+}

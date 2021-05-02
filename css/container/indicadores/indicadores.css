@@ -1,0 +1,38 @@
+#totalizador {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: normal;
+  padding: 10px;
+  padding-left: 5%;
+  padding-right: 10%;
+  color: #451db4;
+}
+
+#indicadores > #indicadoresPorDepartamento {
+  margin-bottom: 15px;
+}
+
+.metricasPorDepartamento {
+  display: flex;
+}
+
+.metricasPorDepartamento p {
+  max-width: 100%;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 3px;
+  margin-left: 13%;
+  font-size: 20px;
+}
+
+#indicadores h3 {
+  font-size: 18px;
+  font-weight: lighter;
+  max-width: 100%;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 3px;
+  margin-left: 13%;
+  font-size: 20px;
+}

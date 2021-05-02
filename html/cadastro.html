@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Recursos Humanos</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/nav/nav.css" />
+    <link rel="stylesheet" href="../css/container/cadastro/cadastro.css" />
+    <link
+      rel="stylesheet"
+      href="../css/container/indicadores/indicadores.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/container/visualizacao/visualizacao.css"
+    />
+    <link rel="stylesheet" href="../css/footer/footer.css" />
+    <script src="../scripts/utilitarios.js" defer></script>
+    <script src="../scripts/manipula-elementos.js" defer></script>
+    <script src="../scripts/recursos-humanos.js" defer></script>
+  </head>
+  <body>
+    <!-- Área do navbar -->
+    <nav class="nav-bar">
+      <div id="nav">
+        <h1>Recursos Humanos - Sistema de Gerenciamento</h1>
+      </div>
+      <div id="nav-menu">
+        <h3>
+          <a href="../html/index.html">Home</a>
+        </h3>
+        <h3>
+          <a href="../html/index.html">Login</a>
+        </h3>
+        <h3>
+          <a href="../html/cadastro.html"
+            >Cadastro de Funcionários + Indicadores</a
+          >
+        </h3>
+
+        <label for="tipoBusca"
+          >Buscar
+          <select id="tipoBusca">
+            <option value="id">Id</option>
+            <option value="nome">Nome</option>
+            <option value="cargo">Cargo</option>
+          </select>
+        </label>
+        <form class="form-busca">
+          <input
+            type="text"
+            id="inputBusca"
+            class="input-busca"
+            placeholder="Digite para pesquisar"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <div id="cadastro">
+      <h2>Cadastro de Funcionários</h2>
+      <form id="form-cadastro" class="form-cadastro">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div class="form-field">
+            <label for="nomeFuncionario" class="label-input"
+              >Nome do funcionário:</label
+            >
+            <input
+              id="nomeFuncionario"
+              type="text"
+              placeholder="Digite o nome"
+            />
+          </div>
+          <div class="form-field">
+            <label for="idade" class="label-input">Idade:</label>
+            <input
+              id="idade"
+              type="number"
+              min="18"
+              max="99"
+              placeholder="Digite a idade"
+            />
+          </div>
+          <div class="form-field">
+            <label for="cpf" class="label-input">Número do CPF:</label>
+            <input
+              id="cpf"
+              type="number"
+              min="11"
+              max="14"
+              placeholder="Digite o cpf"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="genero" class="label-input">Gênero:</label>
+            <select name="" id="genero">
+              <option value="" selected disabled>Escolha uma das opções</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="escolaridade" class="label-input">Escolaridade:</label>
+            <select name="" id="escolaridade">
+              <option value="" selected disabled>Escolha uma das opções</option>
+              <option value="Ensino Médio Cursando">
+                Ensino Médio Cursando
+              </option>
+              <option value="Ensino Médio Completo">
+                Ensino Médio Completo
+              </option>
+              <option value="Superior Cursando">Superior Cursando</option>
+              <option value="Superior Completo">Superior Completo</option>
+              <option value="Pós Graduação Cursando">
+                PósGraduação Cursando
+              </option>
+              <option value="Pós Graduação Completa">
+                PósGraduação Completa
+              </option>
+              <option value="Mestrado Cursando">Mestrado Cursando</option>
+              <option value="Mestrado Completo">Mestrado Completo</option>
+              <option value="Doutorado Cursando">Doutorado Cursando</option>
+              <option value="Doutorado Completo">Doutorado Completo</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="email" class="label-input">E-mail:</label>
+            <input id="email" type="text" placeholder="Digite o e-mail" />
+          </div>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+          <legend>Dados RH</legend>
+
+          <div class="form-field">
+            <label for="cargo" class="label-input">Cargo do funcionário:</label>
+            <input id="cargo" type="text" placeholder="Digite o cargo" />
+          </div>
+
+          <div class="form-field">
+            <label for="departamento" class="label-input">Departamento:</label>
+            <select name="" id="departamento">
+              <option value="" selected disabled>Escolha uma das opções</option>
+              <option value="Financeiro">Financeiro</option>
+              <option value="Recursos Humanos">Recursos Humanos</option>
+              <option value="Tecnologia">Tecnologia</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="salario" class="label-input">Salário:</label>
+            <input id="salario" type="number" placeholder="Digite o salário" />
+          </div>
+          <div class="form-field">
+            <label for="dataAdmissao" class="label-input"
+              >Data de admissão:</label
+            >
+            <input
+              id="dataAdmissao"
+              type="date"
+              placeholder="Digite a data de admissão"
+            />
+          </div>
+        </fieldset>
+
+        <div class="form-acoes">
+          <button id="btnSalvar" type="button" class="cadastrarFuncionario">
+            Salvar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Visualização de funcionários -->
+    <h2 class="titulo">Funcionários:</h2>
+    <div id="visualizacao"></div>
+
+    <div id="cadastro">
+      <h2>Indicadores</h2>
+    </div>
+
+    <!-- Indicadores Gerais -->
+    <h2 class="titulo">Indicadores Gerais:</h2>
+    <div id="indicadores">
+      <h3 id="quantidadeFuncionarios"></h3>
+      <h3 id="totalSalarios"></h3>
+      <h3 id="mediaSalarios"></h3>
+    </div>
+
+    <!-- Indicadores Por Departamento -->
+    <h2 class="titulo">Indicadores Por Departamento:</h2>
+    <div id="indicadores">
+      <div id="indicadoresPorDepartamento"></div>
+    </div>
+  </body>
+
+  <footer>
+    <p>&copy Copyright - Recursos Humanos 2021 - Karina Silva</p>
+  </footer>
+</html>

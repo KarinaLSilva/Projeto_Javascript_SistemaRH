@@ -1,0 +1,64 @@
+#nav {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  justify-content: center;
+  background-color: #0c569ba2;
+  color: white;
+}
+
+#nav > h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+#nav-menu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #524e4e;
+  margin-top: 12px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5px;
+}
+
+#nav-menu > h3 > a {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* h3:after {
+  content: "|";
+  padding: 25px;
+  display: inline;
+} */
+
+#nav-menu-buscar > label {
+  font-size: 17px;
+  font-weight: 600;
+  color: #524e4e;
+  margin-top: 12px;
+}
+
+#nav-menu-buscar > select {
+  outline: none;
+  width: 90px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+main > img {
+  opacity: 0.8;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+
+#nav-menu form {
+  outline: none;
+  border-radius: 10px;
+}
